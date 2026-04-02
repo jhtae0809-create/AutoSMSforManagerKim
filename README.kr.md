@@ -11,10 +11,11 @@ Twilio API를 사용하여 개인화된 설문조사 안내 문자를 자동 발
    pip install twilio python-dotenv
    ```
 2. .env 파일에 Twilio 계정 정보 입력:
-
-TWILIO_ACCOUNT_SID=발급받은_SID
-TWILIO_AUTH_TOKEN=발급받은_토큰
-TWILIO_NUMBER=트윌리오_번호
+   ```Plaintext
+   TWILIO_ACCOUNT_SID=발급받은_SID
+   TWILIO_AUTH_TOKEN=발급받은_토큰
+   TWILIO_NUMBER=트윌리오_번호
+   ```
 
 ## 실행 방법
 sms_dispatcher.py 파일의 contacts 리스트에 수신자 정보를 넣은 후 실행한다:
