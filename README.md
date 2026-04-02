@@ -11,10 +11,11 @@ Sending individual texts to local professionals for survey data collection was r
    pip install twilio python-dotenv
    ```
 2. Create a .env file with your Twilio credentials:
-
-TWILIO_ACCOUNT_SID=your_sid
-TWILIO_AUTH_TOKEN=your_token
-TWILIO_NUMBER=your_twilio_number
+   ```Plaintext
+   TWILIO_ACCOUNT_SID=your_sid
+   TWILIO_AUTH_TOKEN=your_token
+   TWILIO_NUMBER=your_twilio_number
+   ```
 
 ## Usage
 Add your contact list to the contacts array in sms_dispatcher.py and run:
