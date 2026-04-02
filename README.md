@@ -1,12 +1,12 @@
 # Twilio SMS Automator
 
-A Python utility designed to automate the dispatch of personalized survey invitations via the Twilio Messaging API [cite: 2026-03-30]. This tool was developed to streamline communication with local professionals during academic research at Penn State University.
+A Python utility designed to automate the dispatch of personalized survey invitations via the Twilio Messaging API. This tool was developed to streamline communication with local professionals during academic research at Penn State University.
 
 ## Features
-* **Personalized Messaging**: Dynamically generates message bodies using contact metadata (Name, Company) [cite: 2026-03-30].
-* **Segment Validation**: Automatically calculates message length to alert the user of multi-segment (160+ characters) SMS billing [cite: 2026-03-30].
-* **Error Handling**: Implements try-except blocks to catch and log API transmission failures [cite: 2026-03-30].
-* **Secure Configuration**: Uses environment variables to isolate sensitive API credentials [cite: 2026-03-30].
+* **Personalized Messaging**: Dynamically generates message bodies using contact metadata (Name, Company).
+* **Segment Validation**: Automatically calculates message length to alert the user of multi-segment (160+ characters) SMS billing.
+* **Error Handling**: Implements try-except blocks to catch and log API transmission failures.
+* **Secure Configuration**: Uses environment variables to isolate sensitive API credentials.
 
 ## Tech Stack
 * **Language**: Python 3.10+
