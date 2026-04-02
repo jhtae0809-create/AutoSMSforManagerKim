@@ -1,33 +1,25 @@
-# Twilio SMS Automator
+# Twilio SMS Dispatcher
 
-A Python utility designed to automate the dispatch of personalized survey invitations via the Twilio Messaging API. This tool was developed to streamline communication with local professionals during academic research at Penn State University.
+This is a lightweight Python utility to send personalized SMS messages for survey distribution. I developed this to automate manual tasks during my exchange program at Penn State University.
 
-## Features
-* **Personalized Messaging**: Dynamically generates message bodies using contact metadata (Name, Company).
-* **Segment Validation**: Automatically calculates message length to alert the user of multi-segment (160+ characters) SMS billing.
-* **Error Handling**: Implements try-except blocks to catch and log API transmission failures.
-* **Secure Configuration**: Uses environment variables to isolate sensitive API credentials.
+## Why I Built This
+Sending individual texts to local professionals for survey data collection was repetitive and time-consuming. This script automates the process using the Twilio API while keeping the messages personalized.
 
-## Tech Stack
-* **Language**: Python 3.10+
-* **API**: Twilio REST API
-* **Library**: `twilio`, `python-dotenv`
-
-## Complexity Analysis
-* **Time Complexity**: $O(N)$, where $N$ is the number of contacts in the list.
-* **Space Complexity**: $O(N)$ for storing the contact metadata in memory.
-
-## Installation & Usage
-1. Clone the repository and install dependencies:
+## Setup
+1. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install twilio python-dotenv
    ```
-2. Configure your .env file based on .env.example.
+2. Create a .env file with your Twilio credentials:
 
-3. Run the script:
+TWILIO_ACCOUNT_SID=your_sid
+TWILIO_AUTH_TOKEN=your_token
+TWILIO_NUMBER=your_twilio_number
 
-  ```Bash
-  python sms_dispatcher.py
-  ```
+## Usage
+Add your contact list to the contacts array in sms_dispatcher.py and run:
 
+   ```Bash
+   python sms_dispatcher.py
+   ```
 **Author**: Hyuntae Jeong
